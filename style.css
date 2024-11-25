@@ -1,0 +1,156 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --border-radius: 20px;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+    width: 100svw;
+    min-height: 100svh;
+    container: body / inline-size;
+    background: var(--stone-150);
+    margin: 0;
+    font-family: 'Outfit';
+}
+
+main {
+    display: grid;
+    place-items: center;
+    width: 100cqw;
+    min-height: 100cqh;
+    container: main / inline-size;
+}
+
+section[class="recipe-card"] {
+    background: var(--white);
+    width: 50cqw;
+    padding-bottom: 10cqh;
+    padding: 2%;
+    border-radius: var(--border-radius);
+    margin: 10cqh 0 10cqh 0;
+}
+
+section[class="recipe-image"] img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+hgroup[class="recipe-name"] h1 {
+    font-family: 'Young Serif';
+    font-weight: 700;
+}
+
+section[class="recipe-preparation-time"] {
+    background: var(--rose-50);
+    padding: 1% 2% 1% 2%;
+    border-radius: var(--border-radius);
+}
+
+section[class="recipe-preparation-time"] h3 {
+    color: var(--rose-800);
+}
+li{
+    padding-left: 3%;
+}
+section[class="recipe-preparation-time"] li::marker {
+    color: var(--rose-800);
+}
+
+section[class="recipe-ingredients"] h2 {
+    font-family: 'Young Serif';
+    color: var(--brown-800);
+}
+
+section[class="recipe-ingredients"] li::marker {
+    color: var(--brown-800);
+}
+
+section[class="recipe-instructions"] {
+    border-bottom: 1px solid gray;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+section[class="recipe-instructions"] h2 {
+    font-family: 'Young Serif';
+    color: var(--brown-800);
+}
+
+section[class="recipe-instructions"] li::marker {
+    color: var(--brown-800);
+    font-weight: 600;
+}
+
+section[class="recipe-instructions"] li span {
+    font-weight: 600;
+}
+
+section[class="recipe-nutrition"] h2 {
+    font-family: 'Young Serif';
+    color: var(--brown-800);
+    font-weight: 600;
+}
+
+section[class="recipe-nutrition-fact"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid gainsboro;
+    padding: 2% 0 2% 0;
+}
+
+section[class="recipe-nutrition-fact"] span:nth-of-type(1) {
+    margin-left: 20px;
+}
+
+section[class="recipe-nutrition-fact"] span:nth-of-type(2) {
+    color: var(--brown-800);
+    font-weight: 600;
+}
+
+section[class="recipe-nutrition-fact"]:last-of-type {
+    border-bottom: 0px;
+    padding-bottom: 2%;
+}
+
+@container body (inline-size < 1000px) {
+    main {
+        background: white;
+    }
+
+    section[class="recipe-card"] {
+        width: 80cqw;
+        margin: auto;
+        padding: unset;
+    }
+
+    section[class="recipe-image"] {
+        width: 100cqw;
+        transform: translateX(-10cqw);
+    }
+
+    section[class="recipe-image"] img {
+        border-radius: unset;
+    }
+
+    div[class="attribution"] {
+        background: white;
+        padding-top: 10px;
+    }
+}
