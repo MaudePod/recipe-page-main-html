@@ -1,4 +1,4 @@
-[View Solution](https://maudepod.github.io/recipe-page-main-master-html/)
+[View Solution](https://maudepod.github.io/recipe-page-main-html/)
 
 # Frontend Mentor - Recipe page
 
