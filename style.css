@@ -26,7 +26,7 @@ body {
     container: body / inline-size;
     background: var(--stone-150);
     margin: 0;
-    font-family: 'Outfit';
+    font-family: 'Outfit',sans-serif
 }
 
 main {
@@ -53,7 +53,7 @@ section[class="recipe-image"] img {
 }
 
 hgroup[class="recipe-name"] h1 {
-    font-family: 'Young Serif';
+    font-family: 'Young Serif',serif;
     font-weight: 700;
 }
 
@@ -74,7 +74,7 @@ section[class="recipe-preparation-time"] li::marker {
 }
 
 section[class="recipe-ingredients"] h2 {
-    font-family: 'Young Serif';
+    font-family: 'Young Serif',serif;
     color: var(--brown-800);
 }
 
@@ -89,7 +89,7 @@ section[class="recipe-instructions"] {
 }
 
 section[class="recipe-instructions"] h2 {
-    font-family: 'Young Serif';
+    font-family: 'Young Serif',serif;
     color: var(--brown-800);
 }
 
@@ -103,7 +103,7 @@ section[class="recipe-instructions"] li span {
 }
 
 section[class="recipe-nutrition"] h2 {
-    font-family: 'Young Serif';
+    font-family: 'Young Serif',serif;
     color: var(--brown-800);
     font-weight: 600;
 }
